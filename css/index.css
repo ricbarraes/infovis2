@@ -1,0 +1,67 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.form-select {
+  width: min-content;
+  background-color: #f0f0f0;
+}
+
+.container-xxl {
+  height: calc(100vh - 2rem);
+  min-height: 560px;
+}
+
+.chart-container {
+  position: relative;
+}
+
+.choropleth-global {
+  min-height: 400px;
+}
+
+.choropleth-americas {
+  min-height: 560px;
+}
+
+.chart-container > svg {
+  display: block;
+}
+
+.chart-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.chart-legend {
+  font-size: 12px;
+}
+
+.area-path {
+  stroke: #ccc;
+  stroke-width: 0.5px;
+}
+
+.area-path:hover {
+  opacity: 0.7;
+}
+
+.chart-tooltip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #f0f0f0;
+  font-size: 0.875rem;
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.chart-tooltip.show {
+  opacity: 1;
+}
